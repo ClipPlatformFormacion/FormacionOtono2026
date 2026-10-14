@@ -5,6 +5,8 @@ page 50100 "Training List"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Training;
+    Editable = false;
+    CardPageId = "Training Card";
 
     layout
     {
@@ -17,9 +19,18 @@ page 50100 "Training List"
                 field(Price; Rec.Price) { }
                 field(Blocked; Rec.Blocked) { }
                 field("Language Code"; Rec."Language Code") { }
-                field("Duration (hours)"; Rec."Duration (hours)") { }
-                field("No. of Sessions"; Rec."No. of Sessions") { }
-                field("Hours per session"; Rec."Hours per session") { }
+                field("Duration (hours)"; Rec."Duration (hours)")
+                {
+                    Visible = false;
+                }
+                field("No. of Sessions"; Rec."No. of Sessions")
+                {
+                    Visible = false;
+                }
+                field("Hours per session"; Rec."Hours per session")
+                {
+                    Visible = false;
+                }
             }
         }
     }
