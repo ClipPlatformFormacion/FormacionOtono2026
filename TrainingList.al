@@ -33,5 +33,12 @@ page 50100 "Training List"
                 }
             }
         }
+        area(Factboxes)
+        {
+            part(TrainingEditionsFactBox; "Training Editions")
+            {
+                SubPageLink = "Training No." = field("No.");
+            }
+        }
     }
 }

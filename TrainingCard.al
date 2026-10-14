@@ -37,6 +37,10 @@ page 50101 "Training Card"
                 field("No. of Sessions"; Rec."No. of Sessions") { }
                 field("Hours per session"; Rec."Hours per session") { }
             }
+            part(TrainingEditions; "Training Editions")
+            {
+                SubPageLink = "Training No." = field("No.");
+            }
             group(Invoicing)
             {
                 CaptionML = ENU = 'Invoicing', ESP = 'Facturación';
