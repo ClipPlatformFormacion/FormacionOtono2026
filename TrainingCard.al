@@ -13,7 +13,14 @@ page 50101 "Training Card"
             group(General)
             {
                 CaptionML = ENU = 'General', ESP = 'General';
-                field("No."; Rec."No.") { }
+                field("No."; Rec."No.")
+                {
+                    trigger OnAssistEdit()
+                    begin
+                        if Rec.AssistEdit(xRec) then
+                            CurrPage.Update();
+                    end;
+                }
                 field(Name; Rec.Name)
                 {
                     Importance = Promoted;

@@ -6,6 +6,24 @@ table 50100 Training
         field(1; "No."; Code[20])
         {
             CaptionML = ENU = 'No.', ESP = 'Nº';
+
+            trigger OnValidate()
+            var
+                IsHandled: Boolean;
+                ResSetup: Record "Resources Setup";
+                NoSeries: Codeunit "No. Series";
+            begin
+                IsHandled := false;
+                OnBeforeValidateNo(Rec, xRec, IsHandled);
+                if IsHandled then
+                    exit;
+
+                if "No." <> xRec."No." then begin
+                    ResSetup.Get();
+                    NoSeries.TestManual(ResSetup."Resource Nos.");
+                    "No. Series" := '';
+                end;
+            end;
         }
         field(2; Name; Text[100])
         {
@@ -67,7 +85,43 @@ table 50100 Training
                     Error(HoursCannotBeNegative, Rec."Hours per session");
             end;
         }
+        field(56; "No. Series"; Code[20])
+        {
+            Caption = 'No. Series';
+            Editable = false;
+            TableRelation = "No. Series";
+        }
     }
+
+    trigger OnInsert()
+    var
+        Resource: Record Resource;
+        IsHandled: Boolean;
+        ResSetup: Record "Resources Setup";
+        NoSeries: Codeunit "No. Series";
+    begin
+        IsHandled := false;
+        OnBeforeOnInsert(Rec, IsHandled, xRec);
+        if IsHandled then
+            exit;
+
+        if "No." = '' then begin
+            ResSetup.Get();
+            ResSetup.TestField("Resource Nos.");
+            "No. Series" := ResSetup."Resource Nos.";
+            if NoSeries.AreRelated("No. Series", xRec."No. Series") then
+                "No. Series" := xRec."No. Series";
+            "No." := NoSeries.GetNextNo("No. Series");
+            Resource.ReadIsolation(IsolationLevel::ReadUncommitted);
+            Resource.SetLoadFields("No.");
+            while Resource.Get("No.") do
+                "No." := NoSeries.GetNextNo("No. Series");
+        end;
+
+        // DimMgt.UpdateDefaultDim(
+        //   DATABASE::Resource, "No.",
+        //   "Global Dimension 1 Code", "Global Dimension 2 Code");        
+    end;
 
     local procedure CalcDurations()
     begin
@@ -75,5 +129,42 @@ table 50100 Training
             Rec."No. of Sessions" := 1;
 
         Rec.Validate("Hours per session", Rec."Duration (hours)" / Rec."No. of Sessions");
+    end;
+
+    procedure AssistEdit(OldRes: Record Training) Result: Boolean
+    var
+        IsHandled: Boolean;
+        Res: Record Training;
+        ResSetup: Record "Resources Setup";
+        NoSeries: Codeunit "No. Series";
+    begin
+        IsHandled := false;
+        OnBeforeAssistEdit(Rec, OldRes, IsHandled, Result);
+        if IsHandled then
+            exit(Result);
+
+        Res := Rec;
+        ResSetup.Get();
+        ResSetup.TestField("Resource Nos.");
+        if NoSeries.LookupRelatedNoSeries(ResSetup."Resource Nos.", OldRes."No. Series", Res."No. Series") then begin
+            Res."No." := NoSeries.GetNextNo(Res."No. Series");
+            Rec := Res;
+            exit(true);
+        end;
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeAssistEdit(var Resource: Record Training; xOldRes: Record Training; var IsHandled: Boolean; var Result: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeValidateNo(var Resource: Record Training; xResource: Record Training; var IsHandled: Boolean)
+    begin
+    end;
+
+    [IntegrationEvent(false, false)]
+    local procedure OnBeforeOnInsert(var Resource: Record Training; var IsHandled: Boolean; var xResource: Record Training)
+    begin
     end;
 }
