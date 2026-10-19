@@ -24,6 +24,35 @@ table 50101 "Training Edition"
         field(5; "Max. students"; Integer)
         {
             CaptionML = ENU = 'Max. Students', ESP = 'Máx. alumnos';
+
+            trigger OnValidate()
+            var
+                SelectType: TextConst ENU = 'Max. Students cannot be set if Type is not specified',
+                                      ESP = 'No se puede especificar Máx. alumnos si no se establece el Tipo';
+                MaxStudentsNotAllowedOnVideoTutorial: TextConst ENU = 'Cannot have Max. Students on a Video Tutorial',
+                                                            ESP = 'No se pueden especificar Máx. alumnos para un Vídeo tutorial';
+                UnknownType: TextConst ENU = 'Unknown Type %1', ESP = 'Tipo %1 desconocido';
+            begin
+                case Rec.Type of
+                    Rec.Type::" ":
+                        if Rec."Max. students" > 0 then
+                            Error(SelectType);
+                    Rec.Type::"Instructor-Lead":
+                        ;
+                    Rec.Type::"Video Tutorial":
+                        if Rec."Max. students" <> 0 then
+                            Error(MaxStudentsNotAllowedOnVideoTutorial);
+                    else
+                        Error(UnknownType);
+                end;
+            end;
+        }
+        field(6; Type; Option)
+        {
+            CaptionML = ENU = 'Type', ESP = 'Tipo';
+            OptionMembers = " ","Instructor-Lead","Video Tutorial";
+            //                0,     1          ,        2         ,3,4;
+            OptionCaptionML = ENU = ' ,Instructor-Lead,Video Tutorial', ESP = ' ,Guiado por profesor,Vídeo tutorial';
         }
     }
 
