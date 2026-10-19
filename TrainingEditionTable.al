@@ -33,13 +33,13 @@ table 50101 "Training Edition"
                                                             ESP = 'No se pueden especificar Máx. alumnos para un Vídeo tutorial';
                 UnknownType: TextConst ENU = 'Unknown Type %1', ESP = 'Tipo %1 desconocido';
             begin
-                case Rec.Type of
-                    Rec.Type::" ":
+                case Rec."Type (Enum)" of
+                    Rec."Type (Enum)"::" ":
                         if Rec."Max. students" > 0 then
                             Error(SelectType);
-                    Rec.Type::"Instructor-Lead":
+                    Rec."Type (Enum)"::"Instructor-Lead":
                         ;
-                    Rec.Type::"Video Tutorial":
+                    Rec."Type (Enum)"::"Video Tutorial":
                         if Rec."Max. students" <> 0 then
                             Error(MaxStudentsNotAllowedOnVideoTutorial);
                     else
@@ -53,6 +53,10 @@ table 50101 "Training Edition"
             OptionMembers = " ","Instructor-Lead","Video Tutorial";
             //                0,     1          ,        2         ,3,4;
             OptionCaptionML = ENU = ' ,Instructor-Lead,Video Tutorial', ESP = ' ,Guiado por profesor,Vídeo tutorial';
+        }
+        field(7; "Type (Enum)"; Enum "Edition Type")
+        {
+            CaptionML = ENU = 'Type (Enum)', ESP = 'Tipo (Enum)';
         }
     }
 
