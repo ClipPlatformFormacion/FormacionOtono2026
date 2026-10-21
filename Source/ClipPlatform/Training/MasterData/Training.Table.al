@@ -7,6 +7,8 @@ using System.Globalization;
 table 50100 Training
 {
     CaptionML = ENU = 'Training', ESP = 'Formación';
+    DataClassification = CustomerContent;
+
     fields
     {
         field(1; "No."; Code[20])
@@ -96,6 +98,7 @@ table 50100 Training
             Caption = 'No. Series';
             Editable = false;
             TableRelation = "No. Series";
+            DataClassification = SystemMetadata;
         }
     }
 
