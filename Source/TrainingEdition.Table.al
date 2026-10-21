@@ -27,23 +27,23 @@ table 50101 "Training Edition"
 
             trigger OnValidate()
             var
-                SelectType: TextConst ENU = 'Max. Students cannot be set if Type is not specified',
+                SelectTypeErr: TextConst ENU = 'Max. Students cannot be set if Type is not specified',
                                       ESP = 'No se puede especificar Máx. alumnos si no se establece el Tipo';
-                MaxStudentsNotAllowedOnVideoTutorial: TextConst ENU = 'Cannot have Max. Students on a Video Tutorial',
+                MaxStudentsNotAllowedOnVideoTutorialErr: TextConst ENU = 'Cannot have Max. Students on a Video Tutorial',
                                                             ESP = 'No se pueden especificar Máx. alumnos para un Vídeo tutorial';
-                UnknownType: TextConst ENU = 'Unknown Type %1', ESP = 'Tipo %1 desconocido';
+                UnknownTypeErr: TextConst ENU = 'Unknown Type %1', ESP = 'Tipo %1 desconocido';
             begin
                 case Rec."Type (Enum)" of
                     Rec."Type (Enum)"::" ":
                         if Rec."Max. students" > 0 then
-                            Error(SelectType);
+                            Error(SelectTypeErr);
                     Rec."Type (Enum)"::"Instructor-Lead":
                         ;
                     Rec."Type (Enum)"::"Video Tutorial":
                         if Rec."Max. students" <> 0 then
-                            Error(MaxStudentsNotAllowedOnVideoTutorial);
+                            Error(MaxStudentsNotAllowedOnVideoTutorialErr);
                     else
-                        Error(UnknownType);
+                        Error(UnknownTypeErr);
                 end;
             end;
         }

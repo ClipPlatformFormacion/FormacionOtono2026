@@ -9,9 +9,9 @@ table 50100 Training
 
             trigger OnValidate()
             var
-                IsHandled: Boolean;
-                ResSetup: Record "Resources Setup";
+                ResourcesSetup: Record "Resources Setup";
                 NoSeries: Codeunit "No. Series";
+                IsHandled: Boolean;
             begin
                 IsHandled := false;
                 OnBeforeValidateNo(Rec, xRec, IsHandled);
@@ -19,8 +19,8 @@ table 50100 Training
                     exit;
 
                 if "No." <> xRec."No." then begin
-                    ResSetup.Get();
-                    NoSeries.TestManual(ResSetup."Resource Nos.");
+                    ResourcesSetup.Get();
+                    NoSeries.TestManual(ResourcesSetup."Resource Nos.");
                     "No. Series" := '';
                 end;
             end;
@@ -78,11 +78,11 @@ table 50100 Training
 
             trigger OnValidate()
             var
-                HoursCannotBeNegative: TextConst ENU = 'Hours per session (%1) cannot be negative',
+                HoursCannotBeNegativeErr: TextConst ENU = 'Hours per session (%1) cannot be negative',
                                                  ESP = 'Las horas por sesión (%1) no pueden ser negativas';
             begin
                 if Rec."Hours per session" < 0 then
-                    Error(HoursCannotBeNegative, Rec."Hours per session");
+                    Error(HoursCannotBeNegativeErr, Rec."Hours per session");
             end;
         }
         field(56; "No. Series"; Code[20])
@@ -95,10 +95,10 @@ table 50100 Training
 
     trigger OnInsert()
     var
-        Resource: Record Resource;
-        IsHandled: Boolean;
-        ResSetup: Record "Resources Setup";
+        Training: Record Training;
+        ResourcesSetup: Record "Resources Setup";
         NoSeries: Codeunit "No. Series";
+        IsHandled: Boolean;
     begin
         IsHandled := false;
         OnBeforeOnInsert(Rec, IsHandled, xRec);
@@ -106,15 +106,15 @@ table 50100 Training
             exit;
 
         if "No." = '' then begin
-            ResSetup.Get();
-            ResSetup.TestField("Resource Nos.");
-            "No. Series" := ResSetup."Resource Nos.";
+            ResourcesSetup.Get();
+            ResourcesSetup.TestField("Resource Nos.");
+            "No. Series" := ResourcesSetup."Resource Nos.";
             if NoSeries.AreRelated("No. Series", xRec."No. Series") then
                 "No. Series" := xRec."No. Series";
             "No." := NoSeries.GetNextNo("No. Series");
-            Resource.ReadIsolation(IsolationLevel::ReadUncommitted);
-            Resource.SetLoadFields("No.");
-            while Resource.Get("No.") do
+            Training.ReadIsolation(IsolationLevel::ReadUncommitted);
+            Training.SetLoadFields("No.");
+            while Training.Get("No.") do
                 "No." := NoSeries.GetNextNo("No. Series");
         end;
 
@@ -131,40 +131,40 @@ table 50100 Training
         Rec.Validate("Hours per session", Rec."Duration (hours)" / Rec."No. of Sessions");
     end;
 
-    procedure AssistEdit(OldRes: Record Training) Result: Boolean
+    procedure AssistEdit(OldTraining: Record Training) Result: Boolean
     var
-        IsHandled: Boolean;
-        Res: Record Training;
-        ResSetup: Record "Resources Setup";
+        Training: Record Training;
+        ResourcesSetup: Record "Resources Setup";
         NoSeries: Codeunit "No. Series";
+        IsHandled: Boolean;
     begin
         IsHandled := false;
-        OnBeforeAssistEdit(Rec, OldRes, IsHandled, Result);
+        OnBeforeAssistEdit(Rec, OldTraining, IsHandled, Result);
         if IsHandled then
             exit(Result);
 
-        Res := Rec;
-        ResSetup.Get();
-        ResSetup.TestField("Resource Nos.");
-        if NoSeries.LookupRelatedNoSeries(ResSetup."Resource Nos.", OldRes."No. Series", Res."No. Series") then begin
-            Res."No." := NoSeries.GetNextNo(Res."No. Series");
-            Rec := Res;
+        Training := Rec;
+        ResourcesSetup.Get();
+        ResourcesSetup.TestField("Resource Nos.");
+        if NoSeries.LookupRelatedNoSeries(ResourcesSetup."Resource Nos.", OldTraining."No. Series", Training."No. Series") then begin
+            Training."No." := NoSeries.GetNextNo(Training."No. Series");
+            Rec := Training;
             exit(true);
         end;
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeAssistEdit(var Resource: Record Training; xOldRes: Record Training; var IsHandled: Boolean; var Result: Boolean)
+    local procedure OnBeforeAssistEdit(var Training: Record Training; xOldTraining: Record Training; var IsHandled: Boolean; var Result: Boolean)
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeValidateNo(var Resource: Record Training; xResource: Record Training; var IsHandled: Boolean)
+    local procedure OnBeforeValidateNo(var Training: Record Training; xTraining: Record Training; var IsHandled: Boolean)
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeOnInsert(var Resource: Record Training; var IsHandled: Boolean; var xResource: Record Training)
+    local procedure OnBeforeOnInsert(var Training: Record Training; var IsHandled: Boolean; var xTraining: Record Training)
     begin
     end;
 }
