@@ -1,0 +1,10 @@
+{
+    "name": "Normas personalizadas de los Analizadores de Código",
+    "rules": [
+        {
+            "id": "AA0218",
+            "action": "None",
+            "justification": "ToolTip"
+        }
+    ]
+}

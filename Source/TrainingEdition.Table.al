@@ -8,6 +8,7 @@ table 50101 "Training Edition"
         {
             CaptionML = ENU = 'Training No.', ESP = 'Nº formación';
             TableRelation = Training;
+            ToolTipML = ENU = 'Help', ESP = 'Un texto de ayuda';
         }
         field(2; Edition; Code[20])
         {

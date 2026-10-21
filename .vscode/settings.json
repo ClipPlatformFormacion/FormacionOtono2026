@@ -11,5 +11,6 @@
         "${UICop}",
         "${PerTenantExtensionCop}",
         "${CodeCop}"
-    ]
+    ],
+    "al.ruleSetPath": "./.vscode/NormasPersonalizadasAnalizadores.ruleset.json"
 }
