@@ -1,3 +1,5 @@
+namespace ClipPlatform.Training.MasterData;
+
 table 50101 "Training Edition"
 {
     CaptionML = ENU = 'Training Edition', ESP = 'Edición formación';

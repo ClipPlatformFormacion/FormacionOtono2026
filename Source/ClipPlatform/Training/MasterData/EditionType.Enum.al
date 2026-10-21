@@ -1,3 +1,5 @@
+namespace ClipPlatform.Training.MasterData;
+
 enum 50100 "Edition Type"
 {
     CaptionML = ENU = 'Edition Type', ESP = 'Tipo edición';

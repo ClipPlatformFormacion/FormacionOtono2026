@@ -1,3 +1,7 @@
+namespace ClipPlatform.Training.MasterData;
+
+using Microsoft.Sales.Customer;
+
 page 50100 "Training List"
 {
     CaptionML = ENU = 'Trainings', ESP = 'Formaciones';

@@ -1,3 +1,7 @@
+namespace ClipPlatform.Training.Permissions;
+
+using ClipPlatform.Training.MasterData;
+
 permissionset 50100 "Super Training"
 {
     CaptionML = ENU = 'SUPER Training', ESP = 'SUPER Formaciones';

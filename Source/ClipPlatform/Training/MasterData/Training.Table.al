@@ -1,3 +1,9 @@
+namespace ClipPlatform.Training.MasterData;
+
+using Microsoft.Foundation.NoSeries;
+using Microsoft.Projects.Resources.Setup;
+using System.Globalization;
+
 table 50100 Training
 {
     CaptionML = ENU = 'Training', ESP = 'Formación';
@@ -9,7 +15,7 @@ table 50100 Training
 
             trigger OnValidate()
             var
-                ResourcesSetup: Record "Resources Setup";
+                ResourcesSetup: Record Microsoft.Projects.Resources.Setup."Resources Setup";
                 NoSeries: Codeunit "No. Series";
                 IsHandled: Boolean;
             begin

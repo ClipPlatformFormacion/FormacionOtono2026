@@ -1,3 +1,5 @@
+namespace ClipPlatform.Training.MasterData;
+
 page 50101 "Training Card"
 {
     CaptionML = ENU = 'Training Card', ESP = 'Ficha formación';
