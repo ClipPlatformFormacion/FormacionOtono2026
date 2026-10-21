@@ -5,6 +5,31 @@
             "id": "AA0218",
             "action": "None",
             "justification": "ToolTip"
+        },
+        {
+            "id": "AS0051",
+            "action": "None",
+            "justification": "AppSource app.json"
+        },
+        {
+            "id": "AS0052",
+            "action": "None",
+            "justification": "AppSource app.json"
+        },
+        {
+            "id": "AS0084",
+            "action": "None",
+            "justification": "Rango de numeración de AppSource"
+        },
+        {
+            "id": "AS0092",
+            "action": "None",
+            "justification": "Telemetría Azure AppSource"
+        },
+        {
+            "id": "AS0054",
+            "action": "None",
+            "justification": "Prefijo AppSource"
         }
     ]
 }
