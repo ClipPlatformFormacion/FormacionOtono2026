@@ -51,6 +51,7 @@ page 50100 "Training List"
                 CaptionML = ENU = 'Editions', ESP = 'Ediciones';
                 RunObject = page "Training Editions";
                 RunPageLink = "Training No." = field("No.");
+                Image = List;
             }
         }
     }
