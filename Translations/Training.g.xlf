@@ -188,6 +188,36 @@
           <note from="Developer" annotates="general" priority="2">ESP="SUPER Formaciones"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet Super Training - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3105972417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trainings Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 3215208288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign numbers to Trainings.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Training Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 3215208288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Training Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3105972417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trainings Setup</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3105972417 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Setup - Control Numbering - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>
