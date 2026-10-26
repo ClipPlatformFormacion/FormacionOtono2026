@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="es-ES" original="Training">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 2116756124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Property Caption</note>
+          <target>Formación</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 3543129988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Bloqueado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Blocked - Property Caption</note>
+          <target>Bloqueado</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 1545276864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration (hours)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Duración (horas)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Duration (hours) - Property Caption</note>
+          <target>Duración (horas)</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 3151220494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hours per session</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Horas por sesión"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Hours per session - Property Caption</note>
+          <target>Horas por sesión</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 3151220494 - Method 2126772001 - NamedType 3720860165" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Hours per session (%1) cannot be negative</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Las horas por sesión (%1) no pueden ser negativas"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Hours per session - Method OnValidate - NamedType HoursCannotBeNegativeErr</note>
+          <target>Las horas por sesión (%1) no pueden ser negativas</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 2273653569 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Language Code</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Cód. idioma"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Language Code - Property Caption</note>
+          <target>Cód. idioma</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Name - Property Caption</note>
+          <target>Nombre</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field No. - Property Caption</note>
+          <target>Nº</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 2578081965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Sessions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº sesiones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field No. of Sessions - Property Caption</note>
+          <target>Nº sesiones</target>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 3635338911 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Precio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Price - Property Caption</note>
+          <target>Precio</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición formación</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Property Caption</note>
+          <target>"Edición formación</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 2511900496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Edition - Property Caption</note>
+          <target>Edición</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 2649176925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>End Date</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha fin"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field End Date - Property Caption</note>
+          <target>Fecha fin</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 793050604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max. Students</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Máx. alumnos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Max. students - Property Caption</note>
+          <target>Máx. alumnos</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 793050604 - Method 2126772001 - NamedType 1701000175" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No se puede especificar Máx. alumnos si no se establece el Tipo</source>
+          <note from="Developer" annotates="general" priority="2">ESP="$3"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Max. students - Method OnValidate - NamedType SelectTypeErr</note>
+          <target>$3</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 793050604 - Method 2126772001 - NamedType 2177920510" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No se pueden especificar Máx. alumnos para un Vídeo tutorial</source>
+          <note from="Developer" annotates="general" priority="2">ESP="$3"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Max. students - Method OnValidate - NamedType MaxStudentsNotAllowedOnVideoTutorialErr</note>
+          <target>$3</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 793050604 - Method 2126772001 - NamedType 2932909231" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown type %1</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo %1 desconocido"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Max. students - Method OnValidate - NamedType UnknownTypeErr</note>
+          <target>Tipo %1 desconocido</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 474480784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Start Date</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Fecha inicio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Start Date - Property Caption</note>
+          <target>Fecha inicio</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 667895281 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Un texto de ayuda"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Training No. - Property ToolTip</note>
+          <target>Un texto de ayuda</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 667895281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Training No. - Property Caption</note>
+          <target>Nº formación</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Type - Property Caption</note>
+          <target>Tipo</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Instructor-Lead,Video Tutorial</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Guiado por profesor,Vídeo tutorial"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Type - Property OptionCaption</note>
+          <target> ,Guiado por profesor,Vídeo tutorial</target>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 4167374654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Type (Enum) - Property Caption</note>
+          <target>Tipo (Enum)</target>
+        </trans-unit>
+        <trans-unit id="Page 2676995112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Card</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ficha formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Card - Property Caption</note>
+          <target>Ficha formación</target>
+        </trans-unit>
+        <trans-unit id="Page 2676995112 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>General</source>
+          <note from="Developer" annotates="general" priority="2">ESP="General"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Card - Control General - Property Caption</note>
+          <target>General</target>
+        </trans-unit>
+        <trans-unit id="Page 2676995112 - Control 1450094168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invoicing</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Facturación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Card - Control Invoicing - Property Caption</note>
+          <target>Facturación</target>
+        </trans-unit>
+        <trans-unit id="Page 2676995112 - Control 250015302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Details</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Detalles formativos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Card - Control TrainingDetails - Property Caption</note>
+          <target>Detalles formativos</target>
+        </trans-unit>
+        <trans-unit id="Page 1126296753 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Editions - Property Caption</note>
+          <target>Ediciones formación</target>
+        </trans-unit>
+        <trans-unit id="Page 1650662062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Editions Factbox - Property Caption</note>
+          <target>Ediciones formación</target>
+        </trans-unit>
+        <trans-unit id="Page 2268902318 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trainings</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Formaciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training List - Property Caption</note>
+          <target>Formaciones</target>
+        </trans-unit>
+        <trans-unit id="Page 2268902318 - Action 2267867377 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Editions</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training List - Action Editions - Property Caption</note>
+          <target>Ediciones</target>
+        </trans-unit>
+        <trans-unit id="Enum 1428785120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edition Type</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Tipo edición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Edition Type - Property Caption</note>
+          <target>Tipo edición</target>
+        </trans-unit>
+        <trans-unit id="Enum 1428785120 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2">ESP=" "</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Edition Type - EnumValue   - Property Caption</note>
+          <target> </target>
+        </trans-unit>
+        <trans-unit id="Enum 1428785120 - EnumValue 1965633904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Instructor-Lead</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Guiado por profesor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Edition Type - EnumValue Instructor-Lead - Property Caption</note>
+          <target>Guiado por profesor</target>
+        </trans-unit>
+        <trans-unit id="Enum 1428785120 - EnumValue 770452047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Video Tutorial</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Vídeo tutorial"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Edition Type - EnumValue Video Tutorial - Property Caption</note>
+          <target>Vídeo tutorial</target>
+        </trans-unit>
+        <trans-unit id="PermissionSet 1251778779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>SUPER Training</source>
+          <note from="Developer" annotates="general" priority="2">ESP="SUPER Formaciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PermissionSet Super Training - Property Caption</note>
+          <target>SUPER Formaciones</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

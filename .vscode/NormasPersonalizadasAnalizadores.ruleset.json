@@ -30,6 +30,11 @@
             "id": "AS0054",
             "action": "None",
             "justification": "Prefijo AppSource"
+        },
+        {
+            "id": "AS0015",
+            "action": "Warning",
+            "justification": "TranslationFile"
         }
     ]
 }

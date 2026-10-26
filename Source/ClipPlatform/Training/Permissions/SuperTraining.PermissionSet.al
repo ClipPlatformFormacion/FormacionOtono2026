@@ -4,7 +4,7 @@ using ClipPlatform.Training.MasterData;
 
 permissionset 50100 "Super Training"
 {
-    CaptionML = ENU = 'SUPER Training', ESP = 'SUPER Formaciones';
+    Caption = 'SUPER Training', Comment = 'ESP="SUPER Formaciones"';
     Assignable = true;
     Permissions = tabledata Training = RIMD,
         table Training = X,

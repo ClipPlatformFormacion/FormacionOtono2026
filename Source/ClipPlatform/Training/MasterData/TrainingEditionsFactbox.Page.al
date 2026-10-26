@@ -1,7 +1,7 @@
 namespace ClipPlatform.Training.MasterData;
 page 50103 "Training Editions Factbox"
 {
-    CaptionML = ENU = 'Training Editions', ESP = 'Ediciones formación';
+    Caption = 'Training Editions', Comment = 'ESP="Ediciones formación"';
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = Lists;

@@ -2,40 +2,38 @@ namespace ClipPlatform.Training.MasterData;
 
 table 50101 "Training Edition"
 {
-    CaptionML = ENU = 'Training Edition', ESP = 'Edición formación';
+    Caption = 'Training Edition', Comment = 'ESP="Edición formación';
     DataClassification = CustomerContent;
 
     fields
     {
         field(1; "Training No."; Code[20])
         {
-            CaptionML = ENU = 'Training No.', ESP = 'Nº formación';
+            Caption = 'Training No.', Comment = 'ESP="Nº formación"';
             TableRelation = Training;
-            ToolTipML = ENU = 'Help', ESP = 'Un texto de ayuda';
+            ToolTip = 'Help', Comment = 'ESP="Un texto de ayuda"';
         }
         field(2; Edition; Code[20])
         {
-            CaptionML = ENU = 'Edition', ESP = 'Edición';
+            Caption = 'Edition', Comment = 'ESP="Edición"';
         }
         field(3; "Start Date"; Date)
         {
-            CaptionML = ENU = 'Start Date', ESP = 'Fecha inicio';
+            Caption = 'Start Date', Comment = 'ESP="Fecha inicio"';
         }
         field(4; "End Date"; Date)
         {
-            CaptionML = ENU = 'End Date', ESP = 'Fecha fin';
+            Caption = 'End Date', Comment = 'ESP="Fecha fin"';
         }
         field(5; "Max. students"; Integer)
         {
-            CaptionML = ENU = 'Max. Students', ESP = 'Máx. alumnos';
+            Caption = 'Max. Students', Comment = 'ESP="Máx. alumnos"';
 
             trigger OnValidate()
             var
-                SelectTypeErr: TextConst ENU = 'Max. Students cannot be set if Type is not specified',
-                                      ESP = 'No se puede especificar Máx. alumnos si no se establece el Tipo';
-                MaxStudentsNotAllowedOnVideoTutorialErr: TextConst ENU = 'Cannot have Max. Students on a Video Tutorial',
-                                                            ESP = 'No se pueden especificar Máx. alumnos para un Vídeo tutorial';
-                UnknownTypeErr: TextConst ENU = 'Unknown Type %1', ESP = 'Tipo %1 desconocido';
+                SelectTypeErr: Label 'No se puede especificar Máx. alumnos si no se establece el Tipo', Comment = 'ESP="$3"';
+                MaxStudentsNotAllowedOnVideoTutorialErr: Label 'No se pueden especificar Máx. alumnos para un Vídeo tutorial', Comment = 'ESP="$3"';
+                UnknownTypeErr: Label 'Unknown type %1', Comment = 'ESP="Tipo %1 desconocido"';
             begin
                 case Rec."Type (Enum)" of
                     Rec."Type (Enum)"::" ":
@@ -53,14 +51,14 @@ table 50101 "Training Edition"
         }
         field(6; Type; Option)
         {
-            CaptionML = ENU = 'Type', ESP = 'Tipo';
+            Caption = 'Type', Comment = 'ESP="Tipo"';
             OptionMembers = " ","Instructor-Lead","Video Tutorial";
             //                0,     1          ,        2         ,3,4;
-            OptionCaptionML = ENU = ' ,Instructor-Lead,Video Tutorial', ESP = ' ,Guiado por profesor,Vídeo tutorial';
+            OptionCaption = ' ,Instructor-Lead,Video Tutorial', Comment = 'ESP=" ,Guiado por profesor,Vídeo tutorial"';
         }
         field(7; "Type (Enum)"; Enum "Edition Type")
         {
-            CaptionML = ENU = 'Type (Enum)', ESP = 'Tipo (Enum)';
+            Caption = 'Type (Enum)', Comment = 'ESP="Tipo (Enum)"';
         }
     }
 

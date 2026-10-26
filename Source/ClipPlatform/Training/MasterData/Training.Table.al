@@ -6,14 +6,15 @@ using System.Globalization;
 
 table 50100 Training
 {
-    CaptionML = ENU = 'Training', ESP = 'Formación';
+    Caption = 'Training', Comment = 'ESP="Formación"';
     DataClassification = CustomerContent;
 
     fields
     {
         field(1; "No."; Code[20])
         {
-            CaptionML = ENU = 'No.', ESP = 'Nº';
+            Caption = 'No.', Comment = 'ESP="Nº"';
+            // Caption = 'No.', Comment = 'ESP="Nº",FRA="bla"';
 
             trigger OnValidate()
             var
@@ -35,26 +36,26 @@ table 50100 Training
         }
         field(2; Name; Text[100])
         {
-            CaptionML = ENU = 'Name', ESP = 'Nombre';
+            Caption = 'Name', Comment = 'ESP="Nombre"';
         }
         field(3; Price; Decimal)
         {
-            CaptionML = ENU = 'Price', ESP = 'Precio';
+            Caption = 'Price', Comment = 'ESP="Precio"';
             DecimalPlaces = 2 : 2;
             BlankZero = true;
         }
         field(4; Blocked; Boolean)
         {
-            CaptionML = ENU = 'Blocked', ESP = 'Bloqueado';
+            Caption = 'Blocked', Comment = 'ESP="Bloqueado"';
         }
         field(5; "Language Code"; Code[10])
         {
-            CaptionML = ENU = 'Language Code', ESP = 'Cód. idioma';
+            Caption = 'Language Code', Comment = 'ESP="Cód. idioma"';
             TableRelation = Language;
         }
         field(6; "Duration (hours)"; Decimal)
         {
-            CaptionML = ENU = 'Duration (hours)', ESP = 'Duración (horas)';
+            Caption = 'Duration (hours)', Comment = 'ESP="Duración (horas)"';
             MinValue = 0;
             DecimalPlaces = 0 : 2;
             BlankZero = true;
@@ -66,7 +67,7 @@ table 50100 Training
         }
         field(7; "No. of Sessions"; Integer)
         {
-            CaptionML = ENU = 'No. of Sessions', ESP = 'Nº sesiones';
+            Caption = 'No. of Sessions', Comment = 'ESP="Nº sesiones"';
             MinValue = 0;
             InitValue = 1;
             BlankZero = true;
@@ -78,7 +79,7 @@ table 50100 Training
         }
         field(8; "Hours per session"; Decimal)
         {
-            CaptionML = ENU = 'Hours per session', ESP = 'Horas por sesión';
+            Caption = 'Hours per session', Comment = 'ESP="Horas por sesión"';
             // MinValue = 0;
             DecimalPlaces = 0 : 2;
             BlankZero = true;
@@ -86,8 +87,7 @@ table 50100 Training
 
             trigger OnValidate()
             var
-                HoursCannotBeNegativeErr: TextConst ENU = 'Hours per session (%1) cannot be negative',
-                                                 ESP = 'Las horas por sesión (%1) no pueden ser negativas';
+                HoursCannotBeNegativeErr: Label 'Hours per session (%1) cannot be negative', Comment = 'ESP="Las horas por sesión (%1) no pueden ser negativas"';
             begin
                 if Rec."Hours per session" < 0 then
                     Error(HoursCannotBeNegativeErr, Rec."Hours per session");
