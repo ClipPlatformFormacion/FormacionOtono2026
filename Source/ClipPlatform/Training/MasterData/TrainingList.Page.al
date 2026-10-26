@@ -48,6 +48,10 @@ page 50100 "Training List"
 
     actions
     {
+        area(Promoted)
+        {
+            actionref(EditionsPromoted; Editions) { }
+        }
         area(Processing)
         {
             action(Editions)
