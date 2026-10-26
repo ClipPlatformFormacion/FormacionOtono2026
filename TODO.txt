@@ -1,0 +1,2 @@
+- Explicar ApplicationArea
+- Mejorar validación datos Recurso - Training No.

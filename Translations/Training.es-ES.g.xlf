@@ -3,6 +3,24 @@
   <file datatype="xml" source-language="en-US" target-language="es-ES" original="Training">
     <body>
       <group id="body">
+        <trans-unit id="TableExtension 348912950 - Field 667895281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 348912950">
+          <source>Training No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº Formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Resource - Field Training No. - Property Caption</note>
+          <target>Nº Formación</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 348912950 - Field 667895281 - Method 2126772001 - NamedType 2681959087" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 348912950">
+          <source>Cannot link a resource with a training because resource has entries</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No se puede vincular el recurso con una formación porque el recurso tiene movimientos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Resource - Field Training No. - Method OnValidate - NamedType ResouceHasEntriesErr</note>
+          <target>No se puede vincular el recurso con una formación porque el recurso tiene movimientos</target>
+        </trans-unit>
+        <trans-unit id="EnumExtension 270816758 - EnumValue 2116756124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 270816758">
+          <source>Training</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension Resource Type - EnumValue Training - Property Caption</note>
+          <target>Formación</target>
+        </trans-unit>
         <trans-unit id="Table 2116756124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Training</source>
           <note from="Developer" annotates="general" priority="2">ESP="Formación"</note>
@@ -223,6 +241,36 @@
           <note from="Developer" annotates="general" priority="2">ESP="SUPER Formaciones"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PermissionSet Super Training - Property Caption</note>
           <target>SUPER Formaciones</target>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trainings Setup</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primary Key</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 3215208288 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number series code you can use to assign numbers to Trainings.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Training Nos. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3105972417 - Field 3215208288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training Nos.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Setup - Field Training Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3105972417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trainings Setup</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Setup - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3105972417 - Control 1532816877 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numbering</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Training Setup - Control Numbering - Property Caption</note>
         </trans-unit>
       </group>
     </body>
