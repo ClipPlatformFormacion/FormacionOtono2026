@@ -26,6 +26,8 @@ tableextension 50100 Resource extends Resource
                 if ResourceHasEntries() then
                     Error(ResouceHasEntriesErr);
 
+                CheckTrainingLinkedToAnotherResource(Rec."No.", Rec."Training No.");
+
                 if Rec."Training No." <> '' then begin
                     Rec.Validate(Type, Rec.Type::Training);
                     Training.Get(Rec."Training No.");
@@ -46,5 +48,22 @@ tableextension 50100 Resource extends Resource
             exit(false)
         else
             exit(true);
+    end;
+
+    local procedure CheckTrainingLinkedToAnotherResource(No: Code[20]; TrainingNo: Code[20])
+    var
+        Resource: Record Resource;
+        TrainingLinkedToAnotherResourceErr: Label 'Training %1 is already linked to Resource %2',
+                        Comment = 'ESP="La formación %1 ya está vinculada con el recurso %2"';
+    begin
+#pragma warning disable AA0210
+        Resource.SetRange("Training No.", TrainingNo);
+#pragma warning restore AA0210        
+        Resource.SetFilter("No.", '<>%1', No);
+        if Resource.IsEmpty() then
+            exit;
+
+        Resource.FindFirst();
+        Error(TrainingLinkedToAnotherResourceErr, Rec."Training No.", Resource."No.");
     end;
 }

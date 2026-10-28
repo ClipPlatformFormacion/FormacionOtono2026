@@ -1,2 +1,6 @@
 - Explicar ApplicationArea
-- Mejorar validación datos Recurso - Training No.
+
+
+
+- Ejercicio:
+    Sincronización de datos cuando un usuario actualiza información en la Formacion, que se actualice el Recurso vinculado (si es que existe)

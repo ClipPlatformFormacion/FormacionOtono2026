@@ -102,6 +102,18 @@ table 50100 Training
         }
     }
 
+    keys
+    {
+        key(PK; "No.")
+        {
+            Clustered = true;
+        }
+        key(SK1; Name)
+        {
+            Unique = true;
+        }
+    }
+
     trigger OnInsert()
     var
         Training: Record Training;
