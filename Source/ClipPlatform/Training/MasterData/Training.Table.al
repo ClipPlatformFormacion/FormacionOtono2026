@@ -8,6 +8,7 @@ table 50100 Training
 {
     Caption = 'Training', Comment = 'ESP="Formación"';
     DataClassification = CustomerContent;
+    LookupPageId = "Training List";
 
     fields
     {
@@ -112,6 +113,12 @@ table 50100 Training
         {
             Unique = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Name, "Language Code", Price) { }
+        fieldgroup(Brick; "No.", Name, "No. of Sessions") { }
     }
 
     trigger OnInsert()

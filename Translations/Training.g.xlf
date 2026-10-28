@@ -3,210 +3,205 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Training">
     <body>
       <group id="body">
-        <trans-unit id="Page 662456783 - Control 485863751 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 485863751 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the ADCS field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control ADCS - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control ADCS - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 4270985946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 4270985946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Advanced field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Advanced - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Advanced - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2573847538 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2573847538 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Assembly field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Assembly - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Assembly - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3227672870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3227672870 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Basic field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Basic - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Basic - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1165485984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1165485984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Basic ES field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Basic ES - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Basic ES - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 503024588 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 503024588 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Comments field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Comments - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Comments - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3997336476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3997336476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Company Name field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Company Name - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Company Name - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1899417270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1899417270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Cost Accounting field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Cost Accounting - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Cost Accounting - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2173385693 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Dimensions field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Dimensions - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Dimensions - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 681560359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 681560359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Fixed Assets field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Fixed Assets - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Fixed Assets - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3857146285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3857146285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Intercompany field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Intercompany - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Intercompany - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 4123757252 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 4123757252 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Inventory Analysis field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Inventory Analysis - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Inventory Analysis - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2168374300 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2168374300 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item Budget field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Item Budget - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Item Budget - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 200707616 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 200707616 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item Charges field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Item Charges - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Item Charges - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 418423943 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 418423943 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item References field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Item References - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Item References - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 392666526 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 392666526 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Item Tracking field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Item Tracking - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Item Tracking - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3661919152 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3661919152 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Projects field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Jobs - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Jobs - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1875987797 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Legacy Subcontracting field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Legacy Subcontracting - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3891454143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3891454143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Location field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Location - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Location - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 124933732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 124933732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Manufacturing field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Manufacturing - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Manufacturing - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 222620933 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 222620933 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Notes field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Notes - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Notes - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 574579408 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 574579408 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Order Promising field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Order Promising - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Order Promising - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 4106336951 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 4106336951 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Planning field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Planning - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Planning - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1614329298 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1614329298 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Prepayments field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Prepayments - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Prepayments - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3489829666 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3489829666 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Profile ID field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Profile ID - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Profile ID - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 292812148 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 292812148 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Purch Return Order field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Purch Return Order - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Purch Return Order - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3289007435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3289007435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Purchase Analysis field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Purchase Analysis - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Purchase Analysis - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3312435578 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3312435578 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Purchase Budget field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Purchase Budget - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Purchase Budget - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1067410690 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1067410690 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Record Links field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Record Links - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Record Links - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3866851001 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3866851001 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Relationship Mgmt field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Relationship Mgmt - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Relationship Mgmt - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3111013020 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3111013020 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Reservation field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Reservation - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Reservation - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 4101714206 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 4101714206 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Sales Analysis field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Sales Analysis - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Sales Analysis - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2748057367 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2748057367 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Sales Budget field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Sales Budget - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Sales Budget - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1598289728 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1598289728 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Sales Return Order field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Sales Return Order - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Sales Return Order - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 3225393447 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 3225393447 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Sales Tax field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Sales Tax - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Sales Tax - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2187938695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2187938695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Service field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Service - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Service - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 163342058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 163342058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Suite field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Suite - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Suite - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 577209412 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the SystemCreatedAt field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control SystemCreatedAt - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control SystemCreatedAt - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 2708250016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 2708250016 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the User ID field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control User ID - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control User ID - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 334623485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 334623485 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the VAT field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control VAT - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control VAT - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 662456783 - Control 1484878399 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2387528243 - Control 1484878399 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Warehouse field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Application Area - Control Warehouse - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page My Application Area - Control Warehouse - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="TableExtension 627389406 - Field 2116756124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 627389406">
           <source>Training</source>

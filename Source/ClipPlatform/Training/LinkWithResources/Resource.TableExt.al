@@ -39,6 +39,12 @@ tableextension 50100 Resource extends Resource
         }
     }
 
+    fieldgroups
+    {
+        addlast(DropDown; "Training No.") { }
+        addlast(Brick; "Training No.") { }
+    }
+
     local procedure ResourceHasEntries(): Boolean
     var
         ResLedgerEntry: Record "Res. Ledger Entry";
