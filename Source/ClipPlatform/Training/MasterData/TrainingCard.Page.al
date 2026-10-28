@@ -4,7 +4,7 @@ page 50101 "Training Card"
 {
     Caption = 'Training Card', Comment = 'ESP="Ficha formación"';
     PageType = Card;
-    ApplicationArea = All;
+    ApplicationArea = Training;
     UsageCategory = None;
     SourceTable = Training;
 

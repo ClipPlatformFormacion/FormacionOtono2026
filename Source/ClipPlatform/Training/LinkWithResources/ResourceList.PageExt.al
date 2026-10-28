@@ -10,7 +10,7 @@ pageextension 50101 "Resource List" extends "Resource List"
         {
             field("Training No."; Rec."Training No.")
             {
-                ApplicationArea = All;
+                ApplicationArea = Training;
             }
         }
     }

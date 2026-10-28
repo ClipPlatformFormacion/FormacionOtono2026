@@ -3,7 +3,7 @@ page 50103 "Training Editions Factbox"
 {
     Caption = 'Training Editions', Comment = 'ESP="Ediciones formación"';
     PageType = ListPart;
-    ApplicationArea = All;
+    ApplicationArea = Training;
     UsageCategory = Lists;
     SourceTable = "Training Edition";
 

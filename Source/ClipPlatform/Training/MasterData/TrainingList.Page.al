@@ -6,7 +6,7 @@ page 50100 "Training List"
 {
     Caption = 'Trainings', Comment = 'ESP="Formaciones"';
     PageType = List;
-    ApplicationArea = All;
+    ApplicationArea = Training;
     UsageCategory = Lists;
     SourceTable = Training;
     Editable = false;

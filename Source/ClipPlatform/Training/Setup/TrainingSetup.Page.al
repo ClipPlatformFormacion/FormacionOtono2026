@@ -5,7 +5,7 @@ using ClipPlatform.Training.MasterData;
 page 50104 "Training Setup"
 {
     AccessByPermission = TableData Training = R;
-    ApplicationArea = Jobs;
+    ApplicationArea = All;
     Caption = 'Trainings Setup';
     DeleteAllowed = false;
     InsertAllowed = false;
@@ -22,7 +22,7 @@ page 50104 "Training Setup"
                 Caption = 'Numbering';
                 field("Training Nos."; Rec."Training Nos.")
                 {
-                    ApplicationArea = Jobs;
+                    ApplicationArea = Training;
                 }
             }
         }

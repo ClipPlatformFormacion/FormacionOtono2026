@@ -4,7 +4,7 @@ page 50102 "Training Editions"
 {
     Caption = 'Training Editions', Comment = 'ESP="Ediciones formación"';
     PageType = List;
-    ApplicationArea = All;
+    ApplicationArea = Training;
     UsageCategory = Lists;
     SourceTable = "Training Edition";
 

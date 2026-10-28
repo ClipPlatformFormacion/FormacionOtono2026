@@ -15,7 +15,7 @@ pageextension 50100 "Resource Card" extends "Resource Card"
         {
             field("Training No."; Rec."Training No.")
             {
-                ApplicationArea = All;
+                ApplicationArea = Training;
             }
         }
         modify(Name)
