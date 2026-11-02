@@ -10,10 +10,29 @@
   "help": "",
   "url": "",
   "logo": "",
-  "dependencies": [],
-  "screenshots": [],
+  "dependencies": [
+    {
+      "id": "26d27f79-bc0a-4833-aa3d-8d832108965b",
+      "name": "Training",
+      "publisher": "ClipPlatform",
+      "version": "1.0.0.0"
+    },
+    {
+      "id": "dd0be2ea-f733-4d65-bb34-a28f4624fb14",
+      "name": "Library Assert",
+      "publisher": "Microsoft",
+      "version": "28.0.0.0"
+    },
+    {
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+      "name": "Tests-TestLibraries",
+      "publisher": "Microsoft",
+      "version": "28.0.0.0"
+    }
+  ],
   "platform": "1.0.0.0",
   "application": "28.0.0.0",
+  "screenshots": [],
   "idRanges": [
     {
       "from": 50150,

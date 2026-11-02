@@ -1,9 +1,9 @@
 namespace ClipPlatform.Training.LinkWithResources;
 
 using ClipPlatform.Training.MasterData;
+using ClipPlatform.Training.Setup;
 using Microsoft.Projects.Resources.Ledger;
 using Microsoft.Projects.Resources.Resource;
-using ClipPlatform.Training.Setup;
 
 tableextension 50100 Resource extends Resource
 {
