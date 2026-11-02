@@ -1,0 +1,32 @@
+{
+  "id": "09c3645b-0208-4bd1-81b6-06439c448f90",
+  "name": "Training Test",
+  "publisher": "ClipPlatform",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "28.0.0.0",
+  "idRanges": [
+    {
+      "from": 50150,
+      "to": 50199
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "17.0",
+  "features": [
+    "NoImplicitWith","TranslationFile"
+  ]
+}
