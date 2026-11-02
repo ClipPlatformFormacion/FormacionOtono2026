@@ -2,6 +2,7 @@ namespace ClipPlatform.Training.MasterData;
 
 using ClipPlatform.Training.Setup;
 using Microsoft.Foundation.NoSeries;
+using Microsoft.Projects.Resources.Resource;
 using System.Globalization;
 
 table 50100 Training
@@ -149,6 +150,23 @@ table 50100 Training
         // DimMgt.UpdateDefaultDim(
         //   DATABASE::Resource, "No.",
         //   "Global Dimension 1 Code", "Global Dimension 2 Code");        
+    end;
+
+    trigger OnDelete()
+    var
+        Resource: Record Resource;
+        TrainingEdition: Record "Training Edition";
+        CannotDeleteBoundToResouceErr: Label 'Cannot delete training %1 because it is bound to resource %2',
+            Comment = 'ESP="No se puede eliminar la formación %1 porque está vinculada con el Recurso %2 "';
+    begin
+        Resource.SetRange("Training No.", Rec."No.");
+        if not Resource.IsEmpty() then begin
+            Resource.FindFirst();
+            Error(CannotDeleteBoundToResouceErr, Rec."No.", Resource."No.");
+        end;
+
+        TrainingEdition.SetRange("Training No.", Rec."No.");
+        TrainingEdition.DeleteAll(true);
     end;
 
     local procedure CalcDurations()

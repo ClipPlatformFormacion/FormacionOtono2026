@@ -3,6 +3,7 @@ namespace ClipPlatform.Training.LinkWithResources;
 using ClipPlatform.Training.MasterData;
 using Microsoft.Projects.Resources.Ledger;
 using Microsoft.Projects.Resources.Resource;
+using ClipPlatform.Training.Setup;
 
 tableextension 50100 Resource extends Resource
 {
@@ -17,6 +18,7 @@ tableextension 50100 Resource extends Resource
             trigger OnValidate()
             var
                 Training: Record Training;
+                TrainingSetup: Record "Training Setup";
                 ResouceHasEntriesErr: Label 'Cannot link a resource with a training because resource has entries',
                         Comment = 'ESP="No se puede vincular el recurso con una formación porque el recurso tiene movimientos"';
             begin
@@ -34,6 +36,14 @@ tableextension 50100 Resource extends Resource
                     Rec.Validate(Name, Training.Name);
                     Rec.Validate("Unit Price", Training.Price);
                     Rec.Validate(Blocked, Training.Blocked);
+
+                    TrainingSetup.Get();
+                    TrainingSetup.TestField("Base Unit of Measure");
+                    TrainingSetup.TestField("Gen. Prod. Posting Group");
+                    TrainingSetup.TestField("VAT Prod. Posting Group");
+                    Rec.Validate("Base Unit of Measure", TrainingSetup."Base Unit of Measure");
+                    Rec.Validate("Gen. Prod. Posting Group", TrainingSetup."Gen. Prod. Posting Group");
+                    Rec.Validate("VAT Prod. Posting Group", TrainingSetup."VAT Prod. Posting Group");
                 end;
             end;
         }
