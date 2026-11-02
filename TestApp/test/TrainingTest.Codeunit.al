@@ -46,4 +46,38 @@ codeunit 50152 "Training Test"
         LibraryAssert.AreEqual(TrainingSetup."Gen. Prod. Posting Group", Resource."Gen. Prod. Posting Group", 'El grupo registro producto no es correcto');
         LibraryAssert.AreEqual(TrainingSetup."VAT Prod. Posting Group", Resource."VAT Prod. Posting Group", 'El grupo de IVA no es correcto');
     end;
+
+    [Test]
+    procedure CannotBoundTheSameTrainingToTwoResources()
+    var
+        Training: Record Training;
+        Resource1: Record Resource;
+        Resource2: Record Resource;
+        LibraryAssert: Codeunit "Library Assert";
+        TrainingLinkedToAnotherResourceErr: TextConst ENU = 'Training %1 is already linked to Resource %2',
+                        ESP = 'La formación %1 ya está vinculada con el recurso %2';
+    begin
+        // [Scenario] No se puede vincular la misma formación a 2 recursos distintos
+
+        // [Given] Una formación
+        //         Dos recursos
+        //         La formación vinculada al primer recurso
+        Training.Init();
+        Training."No." := 'TEST';
+        Training.Insert();
+
+        Resource1.Init();
+        Resource1.Insert(true);
+        Resource1.Validate("Training No.", Training."No.");
+        Resource1.Modify(true);
+
+        Resource2.Init();
+        Resource2.Insert(true);
+
+        // [When] Se vincula la formación al segundo recurso
+        asserterror Resource2.Validate("Training No.", Training."No.");
+
+        // [Then] Se tiene que producir un Error
+        LibraryAssert.AreEqual(StrSubstNo(TrainingLinkedToAnotherResourceErr, Training."No.", Resource1."No."), GetLastErrorText(), 'El error no es el esperado');
+    end;
 }
