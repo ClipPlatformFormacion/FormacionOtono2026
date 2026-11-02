@@ -2,11 +2,10 @@ namespace ClipPlatform.GetMin;
 
 codeunit 50151 GetMin
 {
-    procedure GetMin(P1: Integer; P2: Integer): Integer
+    procedure GetMin(P1: Integer; P2: Integer) Resultado: Integer
     begin
-        if P1 < P2 then
-            exit(P1)
-        else
-            exit(P2);
+        Resultado := P1;
+        if P2 < P1 then
+            Resultado := P2;
     end;
 }
