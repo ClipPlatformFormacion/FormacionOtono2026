@@ -26,10 +26,10 @@ codeunit 50152 "Training Test"
         //          Un recurso
 
         Training.Init();
-        Training."No." := 'TEST';
+        Training.Insert(true);
         Training.Price := 450;
-        Training.Name := 'Una formación de test';
-        Training.Insert();
+        Training.Name := 'Una formación de test ' + Training."No.";
+        Training.Modify(true);
 
         Resource.Init();
         Resource.Insert(true);
@@ -63,8 +63,7 @@ codeunit 50152 "Training Test"
         //         Dos recursos
         //         La formación vinculada al primer recurso
         Training.Init();
-        Training."No." := 'TEST';
-        Training.Insert();
+        Training.Insert(true);
 
         Resource1.Init();
         Resource1.Insert(true);
