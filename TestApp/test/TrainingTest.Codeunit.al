@@ -2,6 +2,7 @@ namespace ClipPlatform.Training.Test;
 
 using ClipPlatform.Training.MasterData;
 using ClipPlatform.Training.Setup;
+using Microsoft.Sales.Document;
 using Microsoft.Projects.Resources.Resource;
 using System.TestLibraries.Utilities;
 
@@ -17,6 +18,7 @@ codeunit 50152 "Training Test"
         Resource: Record Resource;
         TrainingSetup: Record "Training Setup";
         LibraryAssert: Codeunit "Library Assert";
+        LibraryTraining: Codeunit "Library - Training";
     begin
         // [Scenario] Cuando se vincula una formación a un recurso, el nombre, precio y bloqueado se copian de la formacion. 
         //            La unidad de medida y grupos contables se copia de la configuración
@@ -25,14 +27,8 @@ codeunit 50152 "Training Test"
         //          La configuración de la formación con unidad de medida y grupos contables
         //          Un recurso
 
-        Training.Init();
-        Training.Insert(true);
-        Training.Price := 450;
-        Training.Name := 'Una formación de test ' + Training."No.";
-        Training.Modify(true);
-
-        Resource.Init();
-        Resource.Insert(true);
+        Training := LibraryTraining.CreateTraining();
+        Resource := LibraryTraining.CreateResource();
 
         // [When] Vinculamos la formación al recurso
         Resource.Validate("Training No.", Training."No.");
@@ -54,6 +50,7 @@ codeunit 50152 "Training Test"
         Resource1: Record Resource;
         Resource2: Record Resource;
         LibraryAssert: Codeunit "Library Assert";
+        LibraryTraining: Codeunit "Library - Training";
         TrainingLinkedToAnotherResourceErr: TextConst ENU = 'Training %1 is already linked to Resource %2',
                         ESP = 'La formación %1 ya está vinculada con el recurso %2';
     begin
@@ -62,21 +59,46 @@ codeunit 50152 "Training Test"
         // [Given] Una formación
         //         Dos recursos
         //         La formación vinculada al primer recurso
-        Training.Init();
-        Training.Insert(true);
-
-        Resource1.Init();
-        Resource1.Insert(true);
-        Resource1.Validate("Training No.", Training."No.");
-        Resource1.Modify(true);
-
-        Resource2.Init();
-        Resource2.Insert(true);
+        Training := LibraryTraining.CreateTraining();
+        Resource1 := LibraryTraining.CreateResource(Training."No.");
+        Resource2 := LibraryTraining.CreateResource();
 
         // [When] Se vincula la formación al segundo recurso
         asserterror Resource2.Validate("Training No.", Training."No.");
 
         // [Then] Se tiene que producir un Error
         LibraryAssert.AreEqual(StrSubstNo(TrainingLinkedToAnotherResourceErr, Training."No.", Resource1."No."), GetLastErrorText(), 'El error no es el esperado');
+    end;
+
+    [Test]
+    procedure SelectingAResourceOnSalesLineFillsTrainingNo()
+    var
+        Training: Record Training;
+        Resource: Record Resource;
+        SalesHeader: Record "Sales Header";
+        SalesLine: Record "Sales Line";
+        LibraryTraining: Codeunit "Library - Training";
+        LibrarySales: Codeunit "Library - Sales";
+        LibraryAssert: Codeunit "Library Assert";
+    begin
+        // [Scenario] Al seleccionar un recurso vinculado a formación en una línea de venta
+        //              el sistema rellena el campo Nº formación
+
+        // [Given] Una formación
+        //          Un recurso vinculado a la formación
+        //          Un pedido de venta para un cliente cualquiera
+        //          Una línea de venta de tipo Recurso
+        Training := LibraryTraining.CreateTraining();
+        Resource := LibraryTraining.CreateResource(Training."No.");
+        LibrarySales.CreateSalesHeader(SalesHeader, Enum::"Sales Document Type"::Order, '');
+        LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
+        SalesLine.Validate(Type, Enum::"Sales Line Type"::Resource);
+        SalesLine.Modify(true);
+
+        // [When] Cuando se selecciona el recurso en la línea de venta
+        SalesLine.Validate("No.", Resource."No.");
+
+        // [Then] En la línea de venta se ha rellenado el campo Nº formación
+        LibraryAssert.AreEqual(Training."No.", SalesLine."Training No.", 'Nº formación incorrecto');
     end;
 }
