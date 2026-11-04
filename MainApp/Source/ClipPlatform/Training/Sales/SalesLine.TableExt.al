@@ -16,7 +16,7 @@ tableextension 50102 "Sales Line" extends "Sales Line"
         field(50101; "Training Edition"; Code[20])
         {
             Caption = 'Training Edition', comment = 'ESP="Edición formación"';
-            TableRelation = "Training Edition";
+            TableRelation = "Training Edition".Edition where("Training No." = field("Training No."));
             DataClassification = CustomerContent;
         }
     }

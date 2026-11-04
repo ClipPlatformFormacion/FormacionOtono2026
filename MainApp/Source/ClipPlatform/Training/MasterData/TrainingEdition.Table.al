@@ -4,6 +4,7 @@ table 50101 "Training Edition"
 {
     Caption = 'Training Edition', Comment = 'ESP="Edición formación';
     DataClassification = CustomerContent;
+    LookupPageId = "Training Editions";
 
     fields
     {
@@ -68,5 +69,10 @@ table 50101 "Training Edition"
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; Edition, "Type (Enum)", "Start Date", "End Date", "Max. students") { }
     }
 }
