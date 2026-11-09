@@ -19,5 +19,13 @@ tableextension 50103 "Sales Shipment Line" extends "Sales Shipment Line"
             TableRelation = "Training Edition".Edition where("Training No." = field("Training No."));
             DataClassification = CustomerContent;
         }
+        field(50131; "Otra cosa"; Integer)
+        {
+            DataClassification = CustomerContent;
+        }
+        field(50130; "Campo 1"; Code[20])
+        {
+            DataClassification = CustomerContent;
+        }
     }
 }

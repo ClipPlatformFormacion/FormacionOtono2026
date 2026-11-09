@@ -24,4 +24,16 @@ codeunit 50153 "Library - Training"
         Resource.Validate("Training No.", TrainingNo);
         Resource.Modify(true);
     end;
+
+    internal procedure CreateTrainingEdition(TrainingNo: Code[20]) TrainingEdition: Record "Training Edition";
+    var
+        LibraryRandom: Codeunit "Library - Random";
+    begin
+        LibraryRandom.Init();
+
+        TrainingEdition.Init();
+        TrainingEdition.Validate("Training No.", TrainingNo);
+        TrainingEdition.Validate(Edition, CopyStr(LibraryRandom.RandText(MaxStrLen(TrainingEdition.Edition)), 1, MaxStrLen(TrainingEdition.Edition)));
+        TrainingEdition.Insert(true);
+    end;
 }

@@ -16,6 +16,10 @@ pageextension 50102 "Sales Order Subform" extends "Sales Order Subform"
             {
                 ApplicationArea = Training;
             }
+            field("Campo 1"; Rec."Campo 1")
+            {
+                ApplicationArea = Training;
+            }
         }
     }
 }
