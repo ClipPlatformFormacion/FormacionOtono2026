@@ -208,6 +208,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Application Area Setup - Field Training - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1308990239 - Field 4186930320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1308990239">
+          <source>Training Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Res. Journal Line - Field Training Edition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1308990239 - Field 667895281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1308990239">
+          <source>Training No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Res. Journal Line - Field Training No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2850645989 - Field 4186930320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2850645989">
+          <source>Training Edition</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Edición formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Res. Ledger Entry - Field Training Edition - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2850645989 - Field 667895281 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2850645989">
+          <source>Training No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº formación"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Res. Ledger Entry - Field Training No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 348912950 - Method 2165862551 - NamedType 1769846210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 348912950">
           <source>Training %1 is already linked to Resource %2</source>
           <note from="Developer" annotates="general" priority="2">ESP="La formación %1 ya está vinculada con el recurso %2"</note>

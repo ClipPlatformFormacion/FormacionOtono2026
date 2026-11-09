@@ -2,6 +2,8 @@ namespace ClipPlatform.Training.Test;
 
 using ClipPlatform.Training.MasterData;
 using ClipPlatform.Training.Setup;
+using Microsoft.Projects.Resources.Journal;
+using Microsoft.Projects.Resources.Ledger;
 using Microsoft.Sales.Document;
 using Microsoft.Projects.Resources.Resource;
 using Microsoft.Sales.History;
@@ -142,5 +144,50 @@ codeunit 50152 "Training Test"
         LibraryAssert.AreEqual(SalesLine."Training Edition", SalesShipmentLine."Training Edition", 'Edición de formación incorrecta');
         LibraryAssert.AreEqual(Salesline."Campo 1", SalesShipmentLine."Campo 1", 'Campo 1 incorrecto');
         LibraryAssert.AreEqual(0, SalesShipmentLine."Otra cosa", 'Campo Otra cosa incorrecto');
+    end;
+
+    [Test]
+    procedure CustomFieldsOnResLedgerEntryFillCorrectly()
+    var
+        Training: Record Training;
+        Resource: Record Resource;
+        SalesHeader: Record "Sales Header";
+        SalesLine: Record "Sales Line";
+        ResLedgerEntry: Record "Res. Ledger Entry";
+        LibraryTraining: Codeunit "Library - Training";
+        LibrarySales: Codeunit "Library - Sales";
+        LibraryAssert: Codeunit "Library Assert";
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] Los campos personalizados en el movimiento de recurso se rellenan correctamente
+
+        // [Given] Una formación
+        //          Un recurso vinculado a la formación
+        //          Un pedido de venta para un cliente cualquiera
+        //          Una línea de venta para el recurso, añadiéndole la edición
+        Training := LibraryTraining.CreateTraining();
+        Resource := LibraryTraining.CreateResource(Training."No.");
+        LibrarySales.CreateSalesHeader(SalesHeader, Enum::"Sales Document Type"::Order, '');
+        LibrarySales.CreateSalesLineSimple(SalesLine, SalesHeader);
+        SalesLine.Validate(Type, Enum::"Sales Line Type"::Resource);
+        SalesLine.Validate("No.", Resource."No.");
+        SalesLine.Validate("Training Edition", LibraryTraining.CreateTrainingEdition(Training."No.").Edition);
+        SalesLine.Validate("Campo 1", 'Valor Campo 1');
+        SalesLine.Validate(Quantity, 1);
+        SalesLine.Modify(true);
+
+        // [When] Se registra la factura
+        DocumentNo := LibrarySales.PostSalesDocument(SalesHeader, true, true);
+
+        // [Then] Los campos personalizados en el movimiento de recurso se han rellenado correctamente
+        ResLedgerEntry.SetRange("Document No.", DocumentNo);
+        ResLedgerEntry.SetRange("Entry Type", Enum::"Res. Journal Line Entry Type"::Sale);
+
+        LibraryAssert.AreEqual(1, ResLedgerEntry.Count(), 'No se ha encontrado un único movimiento de recurso');
+
+        ResLedgerEntry.FindFirst();
+
+        LibraryAssert.AreEqual(SalesLine."Training No.", ResLedgerEntry."Training No.", 'Nº formación incorrecto');
+        LibraryAssert.AreEqual(SalesLine."Training Edition", ResLedgerEntry."Training Edition", 'Edición de formación incorrecta');
     end;
 }
