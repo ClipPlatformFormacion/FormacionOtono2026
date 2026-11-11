@@ -28,7 +28,6 @@ codeunit 50100 "Training Sales Subscriptions"
     local procedure CheckMaxStudentsForTrainingEdition(var SalesLine: Record "Sales Line")
     var
         TrainingEdition: Record "Training Edition";
-        ResLedgerEntry: Record "Res. Ledger Entry";
     begin
         if SalesLine.Type <> SalesLine.Type::Resource then
             exit;
@@ -39,14 +38,11 @@ codeunit 50100 "Training Sales Subscriptions"
         if (SalesLine."Training Edition" = '') or (SalesLine.Quantity = 0) then
             exit;
 
-        TrainingEdition.SetLoadFields("Max. students");
+        TrainingEdition.SetLoadFields("Max. students", "Sales (Qty.)");
         TrainingEdition.Get(SalesLine."Training No.", SalesLine."Training Edition");  // SELECT * FROM "Training Edition" WHERE "Training No." = SalesLine."Training No." AND "Edition" = SalesLine."Training Edition"
+        TrainingEdition.CalcFields("Sales (Qty.)");
 
-        ResLedgerEntry.SetRange("Training No.", SalesLine."Training No.");
-        ResLedgerEntry.SetRange("Training Edition", SalesLine."Training Edition");
-        ResLedgerEntry.CalcSums(Quantity);
-
-        if (-ResLedgerEntry.Quantity) + SalesLine.Quantity > TrainingEdition."Max. students" then
-            Message('Con las vetas previas (%1) y la cantidad actual (%2), se supera el máximo de estudiantes (%3).', -ResLedgerEntry.Quantity, SalesLine.Quantity, TrainingEdition."Max. students");
+        if (TrainingEdition."Sales (Qty.)") + SalesLine.Quantity > TrainingEdition."Max. students" then
+            Message('Con las vetas previas (%1) y la cantidad actual (%2), se supera el máximo de estudiantes (%3).', TrainingEdition."Sales (Qty.)", SalesLine.Quantity, TrainingEdition."Max. students");
     end;
 }
