@@ -35,6 +35,7 @@ page 50100 "Training List"
                 {
                     Visible = false;
                 }
+                field("Editions (Qty.)"; Rec."Editions (Qty.)") { }
             }
         }
         area(Factboxes)

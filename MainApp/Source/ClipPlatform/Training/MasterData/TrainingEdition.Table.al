@@ -1,10 +1,12 @@
 namespace ClipPlatform.Training.MasterData;
+using Microsoft.Projects.Resources.Ledger;
 
 table 50101 "Training Edition"
 {
     Caption = 'Training Edition', Comment = 'ESP="Edición formación';
     DataClassification = CustomerContent;
     LookupPageId = "Training Editions";
+    DrillDownPageId = "Training Editions";
 
     fields
     {
@@ -60,6 +62,20 @@ table 50101 "Training Edition"
         field(7; "Type (Enum)"; Enum "Edition Type")
         {
             Caption = 'Type (Enum)', Comment = 'ESP="Tipo (Enum)"';
+        }
+        field(8; "Sales (Qty.)"; Decimal)
+        {
+            Caption = 'Sales (Qty.)', Comment = 'ESP="Ventas (Cantidad)"';
+            FieldClass = FlowField;
+            CalcFormula = - Sum("Res. Ledger Entry".Quantity where("Training No." = field("Training No."),
+                                                                    "Training Edition" = field("Edition"),
+                                                                    "Posting Date" = field("Posting Date Filter")));
+            Editable = false;
+        }
+        field(9; "Posting Date Filter"; Date)
+        {
+            Caption = 'Posting Date Filter', Comment = 'ESP="Filtro Fecha registro"';
+            FieldClass = FlowFilter;
         }
     }
 

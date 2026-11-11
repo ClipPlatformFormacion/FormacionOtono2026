@@ -102,6 +102,18 @@ table 50100 Training
             TableRelation = "No. Series";
             DataClassification = SystemMetadata;
         }
+        field(57; "Editions (Qty.)"; Integer)
+        {
+            Caption = 'Editions (Qty.)', Comment = 'ESP="Ediciones (Cantidad)"';
+            FieldClass = FlowField;
+            CalcFormula = Count("Training Edition" where("Training No." = field("No."), "Type (Enum)" = field("Edition Type Filter")));
+            Editable = false;
+        }
+        field(58; "Edition Type Filter"; Enum "Edition Type")
+        {
+            Caption = 'Edition Type Filter', Comment = 'ESP="Filtro Tipo Edición"';
+            FieldClass = FlowFilter;
+        }
     }
 
     keys

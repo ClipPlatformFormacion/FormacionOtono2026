@@ -31,6 +31,7 @@ page 50101 "Training Card"
                 {
                     Importance = Additional;
                 }
+                field("Editions (Qty.)"; Rec."Editions (Qty.)") { }
             }
             group(TrainingDetails)
             {

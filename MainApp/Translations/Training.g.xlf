@@ -268,6 +268,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="Duración (horas)"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Duration (hours) - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 3547508656 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Edition Type Filter</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Filtro Tipo Edición"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Edition Type Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2116756124 - Field 186362888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Editions (Qty.)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ediciones (Cantidad)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training - Field Editions (Qty.) - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2116756124 - Field 3151220494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hours per session</source>
           <note from="Developer" annotates="general" priority="2">ESP="Horas por sesión"</note>
@@ -342,6 +352,16 @@
           <source>Unknown type %1</source>
           <note from="Developer" annotates="general" priority="2">ESP="Tipo %1 desconocido"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Max. students - Method OnValidate - NamedType UnknownTypeErr</note>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 3220571008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posting Date Filter</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Filtro Fecha registro"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Posting Date Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4186930320 - Field 3986305445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales (Qty.)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ventas (Cantidad)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Sales (Qty.) - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4186930320 - Field 474480784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Start Date</source>

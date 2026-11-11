@@ -20,6 +20,7 @@ page 50103 "Training Editions Factbox"
                 field("Start Date"; Rec."Start Date") { }
                 field("End Date"; Rec."End Date") { }
                 field("Max. students"; Rec."Max. students") { }
+                field("Sales (Qty.)"; Rec."Sales (Qty.)") { }
             }
         }
     }
