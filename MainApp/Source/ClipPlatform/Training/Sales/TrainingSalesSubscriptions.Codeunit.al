@@ -29,7 +29,6 @@ codeunit 50100 "Training Sales Subscriptions"
     var
         TrainingEdition: Record "Training Edition";
         ResLedgerEntry: Record "Res. Ledger Entry";
-        SalesQty: Decimal;
     begin
         if SalesLine.Type <> SalesLine.Type::Resource then
             exit;
@@ -45,14 +44,9 @@ codeunit 50100 "Training Sales Subscriptions"
 
         ResLedgerEntry.SetRange("Training No.", SalesLine."Training No.");
         ResLedgerEntry.SetRange("Training Edition", SalesLine."Training Edition");
-        ResLedgerEntry.SetLoadFields(Quantity); // SELECT Quantity FROM "Res. Ledger Entry" WHERE "Training No." = SalesLine."Training No." AND "Training Edition" = SalesLine."Training Edition"
-        if ResLedgerEntry.FindSet() then
-            repeat
-                SalesQty := SalesQty + ResLedgerEntry.Quantity;
-            until ResLedgerEntry.Next() = 0;
-        SalesQty := -SalesQty;
+        ResLedgerEntry.CalcSums(Quantity);
 
-        if SalesQty + SalesLine.Quantity > TrainingEdition."Max. students" then
-            Message('Con las vetas previas (%1) y la cantidad actual (%2), se supera el máximo de estudiantes (%3).', SalesQty, SalesLine.Quantity, TrainingEdition."Max. students");
+        if (-ResLedgerEntry.Quantity) + SalesLine.Quantity > TrainingEdition."Max. students" then
+            Message('Con las vetas previas (%1) y la cantidad actual (%2), se supera el máximo de estudiantes (%3).', -ResLedgerEntry.Quantity, SalesLine.Quantity, TrainingEdition."Max. students");
     end;
 }
