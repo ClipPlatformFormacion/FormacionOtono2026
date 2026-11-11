@@ -89,6 +89,6 @@ table 50101 "Training Edition"
 
     fieldgroups
     {
-        fieldgroup(DropDown; Edition, "Type (Enum)", "Start Date", "End Date", "Max. students") { }
+        fieldgroup(DropDown; Edition, "Type (Enum)", "Max. students", "Sales (Qty.)") { }
     }
 }
