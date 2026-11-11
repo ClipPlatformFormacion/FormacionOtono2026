@@ -10,6 +10,7 @@ table 50100 Training
     Caption = 'Training', Comment = 'ESP="Formación"';
     DataClassification = CustomerContent;
     LookupPageId = "Training List";
+    DrillDownPageId = "Training List";
 
     fields
     {

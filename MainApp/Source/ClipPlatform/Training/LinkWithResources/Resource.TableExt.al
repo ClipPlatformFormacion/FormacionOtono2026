@@ -47,6 +47,12 @@ tableextension 50100 Resource extends Resource
                 end;
             end;
         }
+        field(50101; "Training Duration"; decimal)
+        {
+            Caption = 'Training Duration', Comment = 'ESP="Duración de la formación"';
+            FieldClass = FlowField;
+            CalcFormula = lookup(Training."Duration (hours)" where("No." = field("Training No.")));
+        }
     }
 
     fieldgroups
