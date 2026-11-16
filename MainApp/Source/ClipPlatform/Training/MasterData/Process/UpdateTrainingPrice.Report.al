@@ -15,6 +15,13 @@ report 50100 "Update Training Price"
         dataitem(Training; Training)
         {
             RequestFilterFields = "No.", Blocked;
+
+            column(No; "No.") { }
+            column(Name; Name) { }
+            column(OldPrice; OldPrice) { }
+            column(Price; Price) { }
+            column(Blocked; Blocked) { }
+
             trigger OnPreDataItem()
             begin
                 Counter := 0;
@@ -26,6 +33,7 @@ report 50100 "Update Training Price"
                 Counter += 1;
                 // Message('OnAfterGetRecord: %1', Training."No.");
 
+                OldPrice := Training.Price;
                 Training.Validate(Price, Training.Price * (1 + Percentage / 100));
                 Training.Modify(true);
             end;
@@ -79,4 +87,5 @@ report 50100 "Update Training Price"
     var
         Counter: Integer;
         Percentage: Decimal;
+        OldPrice: Decimal;
 }
