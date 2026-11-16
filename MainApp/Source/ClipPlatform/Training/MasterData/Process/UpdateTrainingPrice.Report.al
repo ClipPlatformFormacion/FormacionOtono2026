@@ -16,6 +16,15 @@ report 50100 "Update Training Price"
         {
             RequestFilterFields = "No.", Blocked;
 
+            column(COMPANYNAME; COMPANYPROPERTY.DisplayName())
+            {
+            }
+            column(CurrReport_PAGENOCaption; CurrReport_PAGENOCaptionLbl)
+            {
+            }
+            column(ReportCaption; ReportCaption)
+            {
+            }
             column(No; "No.")
             {
                 IncludeCaption = true;
@@ -107,4 +116,6 @@ report 50100 "Update Training Price"
         Percentage: Decimal;
         OldPrice: Decimal;
         OldPriceCaption: TextConst ENU = 'Old Price', ESP = 'Antiguo precio';
+        CurrReport_PAGENOCaptionLbl: TextConst ENU = 'Page', ESP = 'Pág.';
+        ReportCaption: TextConst ENU = 'Update Training Price', ESP = 'Actualizar precio de formación';
 }
