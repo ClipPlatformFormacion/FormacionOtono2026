@@ -7,7 +7,8 @@ report 50100 "Update Training Price"
     CaptionML = ENU = 'Update Training Price', ESP = 'Actualizar precio de formaciones';
     UsageCategory = Tasks;
     ApplicationArea = All;
-    ProcessingOnly = true;
+    ProcessingOnly = false;
+    DefaultRenderingLayout = RDLCLayout;
 
     dataset
     {
@@ -58,6 +59,15 @@ report 50100 "Update Training Price"
         begin
             Percentage := 10;
         end;
+    }
+
+    rendering
+    {
+        layout(RDLCLayout)
+        {
+            Type = RDLC;
+            LayoutFile = '.\Source\ClipPlatform\Training\MasterData\Process\UpdateTrainingPrice.rdl';
+        }
     }
 
     trigger OnPreReport()
