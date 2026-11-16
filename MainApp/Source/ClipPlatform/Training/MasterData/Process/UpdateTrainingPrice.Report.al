@@ -16,11 +16,29 @@ report 50100 "Update Training Price"
         {
             RequestFilterFields = "No.", Blocked;
 
-            column(No; "No.") { }
-            column(Name; Name) { }
-            column(OldPrice; OldPrice) { }
-            column(Price; Price) { }
-            column(Blocked; Blocked) { }
+            column(No; "No.")
+            {
+                IncludeCaption = true;
+            }
+            column(Name; Name)
+            {
+                IncludeCaption = true;
+            }
+            column(OldPriceCaption; OldPriceCaption)
+            {
+
+            }
+            column(OldPrice; OldPrice)
+            {
+            }
+            column(Price; Price)
+            {
+                IncludeCaption = true;
+            }
+            column(Blocked; Blocked)
+            {
+                IncludeCaption = true;
+            }
 
             trigger OnPreDataItem()
             begin
@@ -88,4 +106,5 @@ report 50100 "Update Training Price"
         Counter: Integer;
         Percentage: Decimal;
         OldPrice: Decimal;
+        OldPriceCaption: TextConst ENU = 'Old Price', ESP = 'Antiguo precio';
 }
