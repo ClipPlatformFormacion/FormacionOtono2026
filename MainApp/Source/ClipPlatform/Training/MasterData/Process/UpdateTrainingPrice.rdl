@@ -755,6 +755,15 @@ End Function
         <Field Name="Blocked">
           <DataField>Blocked</DataField>
         </Field>
+        <Field Name="Training_No_">
+          <DataField>Training_No_</DataField>
+        </Field>
+        <Field Name="Edition">
+          <DataField>Edition</DataField>
+        </Field>
+        <Field Name="Type__Enum_">
+          <DataField>Type__Enum_</DataField>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>DataSource</DataSourceName>

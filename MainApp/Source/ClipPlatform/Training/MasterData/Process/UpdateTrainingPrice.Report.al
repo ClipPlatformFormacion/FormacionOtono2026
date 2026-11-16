@@ -49,6 +49,14 @@ report 50100 "Update Training Price"
                 IncludeCaption = true;
             }
 
+            dataitem("Training Edition"; "Training Edition")
+            {
+                DataItemLink = "Training No." = field("No.");
+                column(Training_No_; "Training No.") { }
+                column(Edition; Edition) { }
+                column(Type__Enum_; "Type (Enum)") { }
+            }
+
             trigger OnPreDataItem()
             begin
                 Counter := 0;
