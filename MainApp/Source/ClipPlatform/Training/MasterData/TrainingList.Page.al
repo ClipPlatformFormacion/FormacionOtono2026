@@ -1,5 +1,6 @@
 namespace ClipPlatform.Training.MasterData;
 
+using ClipPlatform.Training.MasterData.Process;
 using Microsoft.Sales.Customer;
 
 page 50100 "Training List"
@@ -52,6 +53,8 @@ page 50100 "Training List"
         area(Promoted)
         {
             actionref(EditionsPromoted; Editions) { }
+            actionref(UpdateTrainingPricePromoted; UpdateTrainingPriceReport) { }
+            actionref(UpdatePricePromoted; UpdateTrainingPrice) { }
         }
         area(Processing)
         {
@@ -61,6 +64,23 @@ page 50100 "Training List"
                 RunObject = page "Training Editions";
                 RunPageLink = "Training No." = field("No.");
                 Image = List;
+            }
+            action(UpdateTrainingPriceReport)
+            {
+                CaptionML = ENU = 'Update Training Price', ESP = 'Actualizar precio de formaciones';
+                RunObject = report "Update Training Price";
+                Image = Edit;
+            }
+            action(UpdateTrainingPrice)
+            {
+                CaptionML = ENU = 'Update Price', ESP = 'Actualizar precio ';
+                Image = Edit;
+
+                trigger OnAction()
+                begin
+                    Rec.Validate(Price, Rec.Price * (1 + 10 / 100));
+                    Rec.Modify(true);
+                end;
             }
         }
     }
