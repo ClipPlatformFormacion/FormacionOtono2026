@@ -8,7 +8,7 @@ report 50100 "Update Training Price"
     UsageCategory = Tasks;
     ApplicationArea = All;
     ProcessingOnly = false;
-    DefaultRenderingLayout = RDLCLayout;
+    DefaultRenderingLayout = ExcelLayout;
 
     dataset
     {
@@ -110,6 +110,11 @@ report 50100 "Update Training Price"
         {
             Type = RDLC;
             LayoutFile = '.\Source\ClipPlatform\Training\MasterData\Process\UpdateTrainingPrice.rdl';
+        }
+        layout(ExcelLayout)
+        {
+            Type = Excel;
+            LayoutFile = '.\Source\ClipPlatform\Training\MasterData\Process\UpdateTrainingPrice.xlsx';
         }
     }
 
