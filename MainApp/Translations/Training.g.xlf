@@ -228,6 +228,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº formación"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Res. Ledger Entry - Field Training No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4265073908 - Control 2454192829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4265073908">
+          <source>Mi Elemento en la Página</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Resource List - Control MiElementoEnLaPagina - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4265073908 - Control 1605559333 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4265073908">
+          <source>Mi Otro Elemento</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Resource List - Control MiOtroElemento - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 348912950 - Method 2165862551 - NamedType 1769846210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 348912950">
           <source>Training %1 is already linked to Resource %2</source>
           <note from="Developer" annotates="general" priority="2">ESP="La formación %1 ya está vinculada con el recurso %2"</note>
