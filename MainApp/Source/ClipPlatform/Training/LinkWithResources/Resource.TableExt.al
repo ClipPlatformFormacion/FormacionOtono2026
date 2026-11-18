@@ -15,6 +15,7 @@ tableextension 50100 Resource extends Resource
             TableRelation = Training;
             DataClassification = CustomerContent;
 
+
             trigger OnValidate()
             var
                 Training: Record Training;
