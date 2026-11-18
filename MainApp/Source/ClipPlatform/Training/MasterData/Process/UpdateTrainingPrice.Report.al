@@ -116,6 +116,11 @@ report 50100 "Update Training Price"
             Type = Excel;
             LayoutFile = '.\Source\ClipPlatform\Training\MasterData\Process\UpdateTrainingPrice.xlsx';
         }
+        layout(WordLayout)
+        {
+            Type = Word;
+            LayoutFile = '.\Source\ClipPlatform\Training\MasterData\Process\UpdateTrainingPrice.docx';
+        }
     }
 
     trigger OnPreReport()
