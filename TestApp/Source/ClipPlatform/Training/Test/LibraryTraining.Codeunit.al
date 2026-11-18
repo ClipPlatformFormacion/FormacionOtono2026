@@ -34,6 +34,7 @@ codeunit 50153 "Library - Training"
         TrainingEdition.Init();
         TrainingEdition.Validate("Training No.", TrainingNo);
         TrainingEdition.Validate(Edition, CopyStr(LibraryRandom.RandText(MaxStrLen(TrainingEdition.Edition)), 1, MaxStrLen(TrainingEdition.Edition)));
+        TrainingEdition.Validate("Max. students", 10);
         TrainingEdition.Insert(true);
     end;
 }
