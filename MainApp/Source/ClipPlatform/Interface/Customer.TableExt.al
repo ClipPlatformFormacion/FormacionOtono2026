@@ -12,23 +12,10 @@ tableextension 50110 Customer extends Customer
 
             trigger OnValidate()
             var
-                Handled: Boolean;
+                ICustomerLevel: Interface ICustomerLevel;
             begin
-                case Rec."Customer Level" of
-                    Rec."Customer Level"::" ":
-                        Rec.Validate("Level Discount", 0);
-                    Rec."Customer Level"::Bronze:
-                        Rec.Validate("Level Discount", 2);
-                    Rec."Customer Level"::Silver:
-                        Rec.Validate("Level Discount", 5);
-                    Rec."Customer Level"::Gold:
-                        Rec.Validate("Level Discount", 10);
-                    else begin
-                        OnValidateCustomerLevelOnBeforeUnknownLevelError(Rec, xRec, Handled);
-                        if not Handled then
-                            Error('Nivel %1 desconocido', Rec."Customer Level");
-                    end;
-                end;
+                ICustomerLevel := Rec."Customer Level";
+                Rec.Validate("Level Discount", ICustomerLevel.GetDiscount());
             end;
         }
         field(50101; "Level Discount"; Decimal)
@@ -37,9 +24,4 @@ tableextension 50110 Customer extends Customer
             Editable = false;
         }
     }
-
-    [IntegrationEvent(false, false)]
-    local procedure OnValidateCustomerLevelOnBeforeUnknownLevelError(var Rec: Record Customer; xRec: Record Customer; var Handled: Boolean)
-    begin
-    end;
 }
