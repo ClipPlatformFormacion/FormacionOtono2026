@@ -8,7 +8,7 @@ report 50100 "Update Training Price"
     UsageCategory = Tasks;
     ApplicationArea = All;
     ProcessingOnly = false;
-    DefaultRenderingLayout = ExcelLayout;
+    DefaultRenderingLayout = RDLCLayout;
 
     dataset
     {
