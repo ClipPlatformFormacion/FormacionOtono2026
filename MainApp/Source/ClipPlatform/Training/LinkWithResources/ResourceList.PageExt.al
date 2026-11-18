@@ -19,10 +19,12 @@ pageextension 50101 "Resource List" extends "Resource List"
             }
             field(MiElementoEnLaPagina; LLamadaAFuncion())
             {
+                Caption = 'Mi Elemento en la Página';
                 ApplicationArea = Training;
             }
             field(MiOtroElemento; UnaVariable)
             {
+                Caption = 'Mi Otro Elemento';
                 ApplicationArea = Training;
             }
         }
