@@ -13,6 +13,7 @@ page 50106 "Execute Actions"
         {
             actionref(ExecuteQueryPromoted; ExecuteQuery) { }
             actionref(ExecuteXMLPortPromoted; ExecuteXMLPort) { }
+            actionref(ExecuteXMLPortTextPromoted; ExecuteXMLPortText) { }
         }
         area(Processing)
         {
@@ -24,6 +25,11 @@ page 50106 "Execute Actions"
             action(ExecuteXMLPort)
             {
                 RunObject = xmlport "Training";
+                image = Info;
+            }
+            action(ExecuteXMLPortText)
+            {
+                RunObject = xmlport "Training Text";
                 image = Info;
             }
         }

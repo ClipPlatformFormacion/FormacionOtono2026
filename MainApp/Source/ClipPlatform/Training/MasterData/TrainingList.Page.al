@@ -1,5 +1,6 @@
 namespace ClipPlatform.Training.MasterData;
 
+using ClipPlatform.Training.ImportExport;
 using ClipPlatform.Training.MasterData.Process;
 using Microsoft.Sales.Customer;
 
@@ -55,6 +56,7 @@ page 50100 "Training List"
             actionref(EditionsPromoted; Editions) { }
             actionref(UpdateTrainingPricePromoted; UpdateTrainingPriceReport) { }
             actionref(UpdatePricePromoted; UpdateTrainingPrice) { }
+            actionref(ImportDataPromoted; ImportData) { }
         }
         area(Processing)
         {
@@ -80,6 +82,17 @@ page 50100 "Training List"
                 begin
                     Rec.Validate(Price, Rec.Price * (1 + 10 / 100));
                     Rec.Modify(true);
+                end;
+            }
+            action(ImportData)
+            {
+                // RunObject = xmlport "Training Text";
+                image = Info;
+
+                trigger OnAction()
+                begin
+                    XmlPort.Run(Xmlport::"Training Text");
+                    CurrPage.Update();
                 end;
             }
         }

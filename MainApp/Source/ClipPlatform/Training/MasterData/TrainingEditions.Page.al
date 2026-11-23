@@ -1,5 +1,7 @@
 namespace ClipPlatform.Training.MasterData;
 
+using ClipPlatform.Training.ImportExport;
+
 page 50102 "Training Editions"
 {
     Caption = 'Training Editions', Comment = 'ESP="Ediciones formación"';
