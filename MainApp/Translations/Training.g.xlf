@@ -618,6 +618,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Training Setup - Control Numbering - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Profile 2116756124 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Training</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Training - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Profile 2116756124 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profile Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Training - Property ProfileDescription</note>
+        </trans-unit>
       </group>
     </body>
   </file>
