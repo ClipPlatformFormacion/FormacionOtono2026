@@ -1,4 +1,6 @@
 namespace ClipPlatform.Training.Information;
+
+using ClipPlatform.Training.ImportExport;
 page 50106 "Execute Actions"
 {
     PageType = List;
@@ -10,12 +12,18 @@ page 50106 "Execute Actions"
         area(Promoted)
         {
             actionref(ExecuteQueryPromoted; ExecuteQuery) { }
+            actionref(ExecuteXMLPortPromoted; ExecuteXMLPort) { }
         }
         area(Processing)
         {
             action(ExecuteQuery)
             {
                 RunObject = Query "Training Information";
+                image = Info;
+            }
+            action(ExecuteXMLPort)
+            {
+                RunObject = xmlport "Training";
                 image = Info;
             }
         }
