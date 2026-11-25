@@ -1,0 +1,93 @@
+@clientid = elIDDeClienteDeAzure
+@clientsecret = elSecretoDeAzure
+@scope = https://api.businesscentral.dynamics.com/.default
+@tenant = elTenantDeBusinessCentral
+@environment = elEntornoDeBusinessCentral
+
+###########################################################################
+#    ____      _                                   _        _              
+#   / ___| ___| |_    __ _  ___ ___ ___  ___ ___  | |_ ___ | | _____ _ __  
+#  | |  _ / _ \ __|  / _` |/ __/ __/ _ \/ __/ __| | __/ _ \| |/ / _ \ '_ \ 
+#  | |_| |  __/ |_  | (_| | (_| (_|  __/\__ \__ \ | || (_) |   <  __/ | | |
+#   \____|\___|\__|  \__,_|\___\___\___||___/___/  \__\___/|_|\_\___|_| |_|
+#
+###########################################################################
+
+# @name tokenrequest
+POST https://login.microsoftonline.com/{{tenant}}/oauth2/v2.0/token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+&client_id={{clientid}}
+&client_secret={{clientsecret}}
+&scope={{scope}}
+
+###
+@token = {{tokenrequest.response.body.access_token}}
+###
+
+@baseurl = https://api.businesscentral.dynamics.com/v2.0/{{tenant}}/{{environment}}/api
+
+#######################################################################
+#    ____      _                                           _           
+#   / ___| ___| |_    ___ ___  _ __ ___  _ __   __ _ _ __ (_) ___  ___ 
+#  | |  _ / _ \ __|  / __/ _ \| '_ ` _ \| '_ \ / _` | '_ \| |/ _ \/ __|
+#  | |_| |  __/ |_  | (_| (_) | | | | | | |_) | (_| | | | | |  __/\__ \
+#   \____|\___|\__|  \___\___/|_| |_| |_| .__/ \__,_|_| |_|_|\___||___/
+#                                       |_|                            
+######################################################################
+GET {{baseurl}}/v2.0/companies
+Authorization: Bearer {{token}}
+
+######################################################################
+# List of published APIs
+######################################################################
+GET {{baseurl}}/v2.0
+Authorization: Bearer {{token}}
+
+#######################################################################
+#    POST Insert a new record
+#######################################################################
+# This information depends on the properties specified on the API Page
+@APIPublisher = clipplatform;
+@APIGroup = trainingManagement;
+@APIVersion = v1.0;
+@EntityName = training;
+@EntitySetName = trainings;
+
+# @name insertrequest
+POST {{baseurl}}/{{APIPublisher}}/{{APIGroup}}/{{APIVersion}}/companies(99433c7e-34d7-f111-925c-6045bdfdbfec)/{{EntitySetName}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{  
+  "no": "F0001",
+  "name" : "Una formación",
+  "durationHours": 60
+}
+
+###
+@no = {{insertrequest.response.body.entryNo}}
+###
+
+#######################################################################
+#    Execute Procedure on API Page
+#######################################################################
+POST {{baseurl}}/{{APIPublisher}}/{{APIGroup}}/{{APIVersion}}/companies(99433c7e-34d7-f111-925c-6045bdfdbfec)/{{EntitySetName}}({{no}})/Microsoft.NAV.NombreDeLaFuncion
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+#######################################################################
+#    GET Lectura de formaciones
+#######################################################################
+
+GET {{baseurl}}/{{APIPublisher}}/{{APIGroup}}/{{APIVersion}}/companies(99433c7e-34d7-f111-925c-6045bdfdbfec)/{{EntitySetName}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+#######################################################################
+#    GET Lectura de una formación
+#######################################################################
+GET  {{baseurl}}/{{APIPublisher}}/{{APIGroup}}/{{APIVersion}}/companies(99433c7e-34d7-f111-925c-6045bdfdbfec)/{{EntitySetName}}({{no}})
+Authorization: Bearer {{token}}
+Content-Type: application/json

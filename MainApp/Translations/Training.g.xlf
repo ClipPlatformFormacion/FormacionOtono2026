@@ -403,16 +403,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº formación"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Training No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4186930320 - Field 1878130204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Type</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Tipo"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4186930320 - Field 1878130204 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Instructor-Lead,Video Tutorial</source>
-          <note from="Developer" annotates="general" priority="2">ESP=" ,Guiado por profesor,Vídeo tutorial"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Training Edition - Field Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 4186930320 - Field 4167374654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Type (Enum)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Tipo (Enum)"</note>
@@ -627,6 +617,11 @@
           <source>Profile Description</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Profile Training - Property ProfileDescription</note>
+        </trans-unit>
+        <trans-unit id="Page 620702629 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>trainingsAPI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TrainingsAPI - Property Caption</note>
         </trans-unit>
       </group>
     </body>
