@@ -58,6 +58,8 @@ table 50101 "Training Edition"
             OptionMembers = " ","Instructor-Lead","Video Tutorial";
             //                0,     1          ,        2         ,3,4;
             OptionCaption = ' ,Instructor-Lead,Video Tutorial', Comment = 'ESP=" ,Guiado por profesor,Vídeo tutorial"';
+            ObsoleteState = Removed;
+            ObsoleteReason = 'Vamos a eliminar este campo. Utiliza "Type (Enum)" en su lugar.';
         }
         field(7; "Type (Enum)"; Enum "Edition Type")
         {

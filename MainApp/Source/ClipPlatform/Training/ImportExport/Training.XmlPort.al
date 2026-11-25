@@ -32,12 +32,12 @@ xmlport 50100 "Training"
                     {
                         trigger OnBeforePassVariable()
                         begin
-                            case TrainingEditions.Type of
-                                TrainingEditions.Type::" ":
+                            case TrainingEditions."Type (Enum)" of
+                                TrainingEditions."Type (Enum)"::" ":
                                     Type := 'Blank';
-                                TrainingEditions.Type::"Instructor-Lead":
+                                TrainingEditions."Type (Enum)"::"Instructor-Lead":
                                     Type := 'Instructor-Lead';
-                                TrainingEditions.Type::"Video Tutorial":
+                                TrainingEditions."Type (Enum)"::"Video Tutorial":
                                     Type := 'Video Tutorial';
                             end;
                         end;

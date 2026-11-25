@@ -62,15 +62,12 @@ tableextension 50100 Resource extends Resource
         addlast(Brick; "Training No.") { }
     }
 
-    local procedure ResourceHasEntries(): Boolean
+    [Obsolete('Función movida a codeunit codeunit 50106 "Resource Functions"')]
+    procedure ResourceHasEntries(): Boolean
     var
-        ResLedgerEntry: Record "Res. Ledger Entry";
+        ResourceFunctions: Codeunit "Resource Functions";
     begin
-        ResLedgerEntry.SetRange("Resource No.", Rec."No.");
-        if ResLedgerEntry.IsEmpty() then
-            exit(false)
-        else
-            exit(true);
+        exit(ResourceFunctions.ResourceHasEntries(Rec."No."));
     end;
 
     local procedure CheckTrainingLinkedToAnotherResource(No: Code[20]; TrainingNo: Code[20])

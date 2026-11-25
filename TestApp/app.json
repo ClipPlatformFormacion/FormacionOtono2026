@@ -31,7 +31,7 @@
     }
   ],
   "platform": "1.0.0.0",
-  "application": "28.0.0.0",
+  "application": "29.0.0.0",
   "screenshots": [],
   "idRanges": [
     {
@@ -44,7 +44,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "17.0",
+  "runtime": "18.0",
   "features": [
     "NoImplicitWith","TranslationFile"
   ]
